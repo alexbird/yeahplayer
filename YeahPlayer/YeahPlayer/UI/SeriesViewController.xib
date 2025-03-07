@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="23504" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeriesViewController" customModule="YeahPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="waC-PK-W8l" id="fzO-Op-KxO"/>
+                <outlet property="episodesTableView" destination="nlc-a1-V8a" id="TJ6-BP-jdg"/>
+                <outlet property="sliceLabel" destination="RxF-aF-WvE" id="fmk-kL-i6G"/>
+                <outlet property="titleLabel" destination="Es7-qc-1q3" id="txM-lE-KSt"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Apprenticw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es7-qc-1q3">
+                    <rect key="frame" x="96" y="60" width="1728" height="46"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boardrooms and bust-ups in Britain's toughest job interview. Who's all talk and who can deliver?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waC-PK-W8l">
+                    <rect key="frame" x="96" y="114" width="1728" height="35"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series 17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-aF-WvE">
+                    <rect key="frame" x="96" y="157" width="152" height="46"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="nlc-a1-V8a">
+                    <rect key="frame" x="96" y="211" width="1728" height="809"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nkI-NY-t1X"/>
+            <constraints>
+                <constraint firstItem="Es7-qc-1q3" firstAttribute="top" secondItem="nkI-NY-t1X" secondAttribute="top" id="DwZ-br-buE"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="waC-PK-W8l" secondAttribute="trailing" constant="16" id="Gbg-Cu-kDp"/>
+                <constraint firstItem="waC-PK-W8l" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="16" id="HPX-gZ-Pm3"/>
+                <constraint firstItem="Es7-qc-1q3" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="16" id="Jkm-yx-lOb"/>
+                <constraint firstItem="RxF-aF-WvE" firstAttribute="top" secondItem="waC-PK-W8l" secondAttribute="bottom" constant="8" symbolic="YES" id="K2N-ak-KuE"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="Es7-qc-1q3" secondAttribute="trailing" constant="16" id="KgB-K4-Dpb"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="RxF-aF-WvE" secondAttribute="trailing" constant="1592" id="LDg-dT-KrE"/>
+                <constraint firstItem="nlc-a1-V8a" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="16" id="SJy-Ru-qbh"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="nlc-a1-V8a" secondAttribute="trailing" constant="16" id="WGg-lj-ufS"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="bottom" secondItem="nlc-a1-V8a" secondAttribute="bottom" id="XBT-E6-NAz"/>
+                <constraint firstItem="RxF-aF-WvE" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="16" id="cJj-tI-lpD"/>
+                <constraint firstItem="waC-PK-W8l" firstAttribute="top" secondItem="Es7-qc-1q3" secondAttribute="bottom" constant="8" symbolic="YES" id="pVh-iX-jdT"/>
+                <constraint firstItem="nlc-a1-V8a" firstAttribute="top" secondItem="RxF-aF-WvE" secondAttribute="bottom" constant="8" symbolic="YES" id="pc7-ay-LUt"/>
+            </constraints>
+            <point key="canvasLocation" x="-32" y="-35"/>
+        </view>
+    </objects>
+</document>

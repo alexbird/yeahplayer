@@ -1,0 +1,88 @@
+<tt xml:space="default" xml:lang="en-GB" ttp:timeBase="media" ttp:cellResolution="40 24"
+    ittp:activeArea="12% 5% 76% 90%" xmlns="http://www.w3.org/ns/ttml"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ebutts="urn:ebu:tt:style"
+    xmlns:ebuttm="urn:ebu:tt:metadata" xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+    xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling"
+    xmlns:ittp="http://www.w3.org/ns/ttml/profile/imsc1#parameter"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+    <head>
+        <ttm:copyright>William Wordsworth</ttm:copyright>
+        <metadata>
+            <ebuttm:documentMetadata>
+                <ebuttm:conformsToStandard>http://www.w3.org/ns/ttml/profile/imsc1/text</ebuttm:conformsToStandard>
+                <ebuttm:conformsToStandard>urn:ebu:tt:distribution:2018-04</ebuttm:conformsToStandard>
+                <ebuttm:documentOriginatingSystem>
+                    ebu-tt-live.3.0.3.EBUTT3EBUTTDConverter/Distiller(5b2dd6d)</ebuttm:documentOriginatingSystem>
+            </ebuttm:documentMetadata>
+        </metadata>
+        <styling>
+            <style xml:id="S1" tts:textAlign="start" ebutts:linePadding="0.5c" />
+            <style xml:id="S2" tts:textAlign="center" />
+            <style xml:id="S3" tts:color="#ffffffff" tts:backgroundColor="#000000ff" />
+            <style xml:id="S4" tts:color="#ffff00ff" tts:backgroundColor="#000000ff" />
+            <style xml:id="StyleFillLineGapTrue" itts:fillLineGap="true" />
+            <style xml:id="fontFamilyStyle"
+                tts:fontFamily="ReithSans, Arial, Roboto, proportionalSansSerif, default" />
+            <style xml:id="autogenFontStyle_n_150_120" tts:fontSize="150%" tts:lineHeight="120%" />
+        </styling>
+        <layout>
+            <region xml:id="R12" tts:displayAlign="after" tts:overflow="visible"
+                tts:extent="76% 7.826%" tts:origin="12% 87.174%" />
+            <region xml:id="R36" tts:displayAlign="after" tts:overflow="visible"
+                tts:extent="76% 15.652%" tts:origin="12% 79.348%" />
+            <region xml:id="agr_0_22_14_2_after" tts:displayAlign="after" tts:overflow="visible"
+                tts:extent="27.25% 7.826%" tts:origin="12% 87.174%" />
+            <region xml:id="agr_1_20_39_4_after" tts:displayAlign="after" tts:overflow="visible"
+                tts:extent="74.125% 15.652%" tts:origin="13.875% 79.348%" />
+            <region xml:id="agr_3.5_20_36.5_4_after" tts:displayAlign="after" tts:overflow="visible"
+                tts:extent="69.438% 15.652%" tts:origin="18.562% 79.348%" />
+            <region xml:id="agr_0_20_39.5_4_after" tts:displayAlign="after" tts:overflow="visible"
+                tts:extent="75.062% 15.652%" tts:origin="12% 79.348%" />                
+        </layout>
+    </head>
+    
+    <body ttm:role="caption">
+        <div style="autogenFontStyle_n_150_120 S1 StyleFillLineGapTrue fontFamilyStyle">
+            <p xml:id="C2_1" region="R36" style="S2" begin="00:00:02" end="00:00:05">
+                <span style="S3">I wandered lonely as a cloud</span>
+                <br />
+                <span style="S3">That floats on high o'er vales and hills,</span>
+            </p>
+            <p xml:id="C3_1" region="R36" style="S2" begin="00:00:05" end="00:00:08.360">
+                <span style="S3">When all at once I saw a crowd,</span>
+                <br />
+                <span style="S3">A host, of golden daffodils;</span>
+            </p>
+            <p xml:id="C4_1" region="agr_1_20_39_4_after" style="S2" begin="00:00:08.360"
+                end="00:00:12.560">
+                <span style="S3">Beside the lake, beneath the trees,</span>
+                <br />
+                <span style="S3">Fluttering and dancing in the breeze.</span>
+                <br />
+                <span style="S4">&quot;This is in quotes and it is yellow&quot;</span>
+            </p>
+            <p xml:id="C9_2" region="agr_0_22_14_2_after" style="S2" begin="00:00:16.880"
+                end="00:00:20.880" ttm:role="sound">
+                <span style="S3">LOUD NOISE TO LEFT</span>
+            </p>
+            <p xml:id="C5_1" region="agr_3.5_20_36.5_4_after" style="S2" begin="00:00:14"
+                end="00:00:18.880">
+                <span style="S3">Continuous as the stars that shine</span>
+                <br />
+                <span style="S3">And twinkle on the milky way,</span>
+            </p>
+            <p xml:id="C6" region="R12" style="S2" begin="00:00:18.880" end="00:00:21.680">
+                <span style="S3">They stretched in never-ending line</span>
+            </p>
+            <p xml:id="C7_1" region="agr_0_20_39.5_4_after" style="S2" begin="00:00:21.680"
+                end="00:00:25.400">
+                <span style="S3">Along the margin of a bay:</span>
+                <br />
+                <span style="S3">Ten thousand saw I at a glance,</span>
+            </p>
+            <p xml:id="C8_1" region="R36" style="S2" begin="00:00:25.400" end="00:00:30.520">
+                <span style="S3">Tossing their heads in sprightly dance.</span>
+            </p>
+        </div>
+    </body>
+</tt>

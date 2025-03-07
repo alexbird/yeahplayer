@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon-back-768@1x.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

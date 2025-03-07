@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A67012162D53B2C200F347D1 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A67012172D53B2C200F347D1 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A63B58DA2D2F010D00C3ABB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A63B58BE2D2F010C00C3ABB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A63B58C52D2F010C00C3ABB8;
+			remoteInfo = YeahPlayer;
+		};
+		A63B58E42D2F010D00C3ABB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A63B58BE2D2F010C00C3ABB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A63B58C52D2F010C00C3ABB8;
+			remoteInfo = YeahPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A63B58C62D2F010C00C3ABB8 /* YeahPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeahPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63B58D92D2F010D00C3ABB8 /* YeahPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeahPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63B58E32D2F010D00C3ABB8 /* YeahPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeahPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A67012152D53AB5F00F347D1 /* Exceptions for "YeahPlayer" folder in "YeahPlayer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				app/Info.plist,
+			);
+			target = A63B58C52D2F010C00C3ABB8 /* YeahPlayer */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A63B58C82D2F010C00C3ABB8 /* YeahPlayer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A67012152D53AB5F00F347D1 /* Exceptions for "YeahPlayer" folder in "YeahPlayer" target */,
+			);
+			path = YeahPlayer;
+			sourceTree = "<group>";
+		};
+		A63B58DC2D2F010D00C3ABB8 /* YeahPlayerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = YeahPlayerTests;
+			sourceTree = "<group>";
+		};
+		A63B58E62D2F010D00C3ABB8 /* YeahPlayerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = YeahPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A63B58C32D2F010C00C3ABB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63B58D62D2F010D00C3ABB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67012162D53B2C200F347D1 /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63B58E02D2F010D00C3ABB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67012172D53B2C200F347D1 /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A63B58BD2D2F010C00C3ABB8 = {
+			isa = PBXGroup;
+			children = (
+				A63B58C82D2F010C00C3ABB8 /* YeahPlayer */,
+				A63B58DC2D2F010D00C3ABB8 /* YeahPlayerTests */,
+				A63B58E62D2F010D00C3ABB8 /* YeahPlayerUITests */,
+				A63B58C72D2F010C00C3ABB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A63B58C72D2F010C00C3ABB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A63B58C62D2F010C00C3ABB8 /* YeahPlayer.app */,
+				A63B58D92D2F010D00C3ABB8 /* YeahPlayerTests.xctest */,
+				A63B58E32D2F010D00C3ABB8 /* YeahPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A63B58C52D2F010C00C3ABB8 /* YeahPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63B58ED2D2F010D00C3ABB8 /* Build configuration list for PBXNativeTarget "YeahPlayer" */;
+			buildPhases = (
+				A63B58C22D2F010C00C3ABB8 /* Sources */,
+				A63B58C32D2F010C00C3ABB8 /* Frameworks */,
+				A63B58C42D2F010C00C3ABB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A63B58C82D2F010C00C3ABB8 /* YeahPlayer */,
+			);
+			name = YeahPlayer;
+			packageProductDependencies = (
+			);
+			productName = YeahPlayer;
+			productReference = A63B58C62D2F010C00C3ABB8 /* YeahPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A63B58D82D2F010D00C3ABB8 /* YeahPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63B58F02D2F010D00C3ABB8 /* Build configuration list for PBXNativeTarget "YeahPlayerTests" */;
+			buildPhases = (
+				A63B58D52D2F010D00C3ABB8 /* Sources */,
+				A63B58D62D2F010D00C3ABB8 /* Frameworks */,
+				A63B58D72D2F010D00C3ABB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A63B58DB2D2F010D00C3ABB8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A63B58DC2D2F010D00C3ABB8 /* YeahPlayerTests */,
+			);
+			name = YeahPlayerTests;
+			packageProductDependencies = (
+			);
+			productName = YeahPlayerTests;
+			productReference = A63B58D92D2F010D00C3ABB8 /* YeahPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A63B58E22D2F010D00C3ABB8 /* YeahPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63B58F32D2F010D00C3ABB8 /* Build configuration list for PBXNativeTarget "YeahPlayerUITests" */;
+			buildPhases = (
+				A63B58DF2D2F010D00C3ABB8 /* Sources */,
+				A63B58E02D2F010D00C3ABB8 /* Frameworks */,
+				A63B58E12D2F010D00C3ABB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A63B58E52D2F010D00C3ABB8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A63B58E62D2F010D00C3ABB8 /* YeahPlayerUITests */,
+			);
+			name = YeahPlayerUITests;
+			packageProductDependencies = (
+			);
+			productName = YeahPlayerUITests;
+			productReference = A63B58E32D2F010D00C3ABB8 /* YeahPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A63B58BE2D2F010C00C3ABB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A63B58C52D2F010C00C3ABB8 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A63B58D82D2F010D00C3ABB8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A63B58C52D2F010C00C3ABB8;
+					};
+					A63B58E22D2F010D00C3ABB8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A63B58C52D2F010C00C3ABB8;
+					};
+				};
+			};
+			buildConfigurationList = A63B58C12D2F010C00C3ABB8 /* Build configuration list for PBXProject "YeahPlayer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A63B58BD2D2F010C00C3ABB8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A63B58C72D2F010C00C3ABB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A63B58C52D2F010C00C3ABB8 /* YeahPlayer */,
+				A63B58D82D2F010D00C3ABB8 /* YeahPlayerTests */,
+				A63B58E22D2F010D00C3ABB8 /* YeahPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A63B58C42D2F010C00C3ABB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63B58D72D2F010D00C3ABB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63B58E12D2F010D00C3ABB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A63B58C22D2F010C00C3ABB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63B58D52D2F010D00C3ABB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63B58DF2D2F010D00C3ABB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A63B58DB2D2F010D00C3ABB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A63B58C52D2F010C00C3ABB8 /* YeahPlayer */;
+			targetProxy = A63B58DA2D2F010D00C3ABB8 /* PBXContainerItemProxy */;
+		};
+		A63B58E52D2F010D00C3ABB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A63B58C52D2F010C00C3ABB8 /* YeahPlayer */;
+			targetProxy = A63B58E42D2F010D00C3ABB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A63B58EB2D2F010D00C3ABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/YeahPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Debug;
+		};
+		A63B58EC2D2F010D00C3ABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/YeahPlayer-Bridging-Header.h";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A63B58EE2D2F010D00C3ABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YeahPlayer/app/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexbird.yeahplayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/app/YeahPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		A63B58EF2D2F010D00C3ABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YeahPlayer/app/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexbird.yeahplayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/app/YeahPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		A63B58F12D2F010D00C3ABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexbird.YeahPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/app/YeahPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YeahPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YeahPlayer";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Debug;
+		};
+		A63B58F22D2F010D00C3ABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexbird.YeahPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/app/YeahPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YeahPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YeahPlayer";
+				TVOS_DEPLOYMENT_TARGET = 18.2;
+			};
+			name = Release;
+		};
+		A63B58F42D2F010D00C3ABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexbird.YeahPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/app/YeahPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = YeahPlayer;
+			};
+			name = Debug;
+		};
+		A63B58F52D2F010D00C3ABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.alexbird.YeahPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/app/YeahPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = YeahPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A63B58C12D2F010C00C3ABB8 /* Build configuration list for PBXProject "YeahPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63B58EB2D2F010D00C3ABB8 /* Debug */,
+				A63B58EC2D2F010D00C3ABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63B58ED2D2F010D00C3ABB8 /* Build configuration list for PBXNativeTarget "YeahPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63B58EE2D2F010D00C3ABB8 /* Debug */,
+				A63B58EF2D2F010D00C3ABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63B58F02D2F010D00C3ABB8 /* Build configuration list for PBXNativeTarget "YeahPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63B58F12D2F010D00C3ABB8 /* Debug */,
+				A63B58F22D2F010D00C3ABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63B58F32D2F010D00C3ABB8 /* Build configuration list for PBXNativeTarget "YeahPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63B58F42D2F010D00C3ABB8 /* Debug */,
+				A63B58F52D2F010D00C3ABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A63B58BE2D2F010C00C3ABB8 /* Project object */;
+}

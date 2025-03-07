@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="23504" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeViewController" customModule="YeahPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="Vfz-Bz-6hH" id="hCG-np-4h6"/>
+                <outlet property="licenceWarningLabel" destination="qD6-x4-3Ec" id="fow-An-HDL"/>
+                <outlet property="loadingIndicator" destination="YOh-iy-AIN" id="Sfv-SB-RRq"/>
+                <outlet property="playButton" destination="ThT-fA-8nO" id="jiB-Eb-Cjp"/>
+                <outlet property="subtitleLabel" destination="abc-v9-JiX" id="H70-X1-zJR"/>
+                <outlet property="thumbImageView" destination="jtU-bK-nsd" id="UMt-4S-CIf"/>
+                <outlet property="titleLabel" destination="6Y8-x8-hLa" id="k89-R8-djq"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Death on the Nile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y8-x8-hLa">
+                    <rect key="frame" x="96" y="159" width="1728" height="46"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Series 1, Episdoe 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abc-v9-JiX">
+                    <rect key="frame" x="96" y="213" width="235" height="35"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-Bz-6hH">
+                    <rect key="frame" x="96" y="256" width="792" height="215"/>
+                    <string key="text">Detective Hercule Poirot's Egyptian vacation aboard a luxury cruise becomes a murder investigation when a picture-perfect couple's honeymoon is cut short by violent deaths. As the bodies pile up and suspects abound, Poirot must uncover the truth before the killer strikes again in this Agatha Christie adaptation.</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jtU-bK-nsd">
+                    <rect key="frame" x="942" y="256" width="898" height="505"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jtU-bK-nsd" secondAttribute="height" multiplier="16:9" id="Yqh-DM-RCQ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThT-fA-8nO">
+                    <rect key="frame" x="942" y="810" width="142" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="142" id="f1j-DA-ekm"/>
+                        <constraint firstAttribute="height" constant="89" id="gvg-rp-VVY"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system"/>
+                    <connections>
+                        <action selector="playButtonPressed:" destination="-1" eventType="primaryActionTriggered" id="SXm-qt-5R5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARNING: A UK TV licence is required to access BBC iPlayer TV content legally" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qD6-x4-3Ec">
+                    <rect key="frame" x="1118" y="810" width="722" height="92"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YOh-iy-AIN">
+                    <rect key="frame" x="928" y="508" width="64" height="64"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nkI-NY-t1X"/>
+            <constraints>
+                <constraint firstItem="YOh-iy-AIN" firstAttribute="centerX" secondItem="nkI-NY-t1X" secondAttribute="centerX" id="4n8-eo-T2M"/>
+                <constraint firstItem="jtU-bK-nsd" firstAttribute="top" secondItem="Vfz-Bz-6hH" secondAttribute="top" id="Fip-lZ-Ktd"/>
+                <constraint firstItem="6Y8-x8-hLa" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="16" id="G0A-b9-jYz"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="jtU-bK-nsd" secondAttribute="trailing" id="IYD-QI-e4t"/>
+                <constraint firstItem="ThT-fA-8nO" firstAttribute="top" secondItem="jtU-bK-nsd" secondAttribute="bottom" constant="49" id="LoR-cu-qKl"/>
+                <constraint firstItem="abc-v9-JiX" firstAttribute="top" secondItem="6Y8-x8-hLa" secondAttribute="bottom" constant="8" symbolic="YES" id="NOK-vq-bKD"/>
+                <constraint firstItem="Vfz-Bz-6hH" firstAttribute="leading" secondItem="6Y8-x8-hLa" secondAttribute="leading" id="Qek-iM-0TB"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="6Y8-x8-hLa" secondAttribute="trailing" constant="16" id="XjG-pP-Bdg"/>
+                <constraint firstItem="Vfz-Bz-6hH" firstAttribute="top" secondItem="abc-v9-JiX" secondAttribute="bottom" constant="8" symbolic="YES" id="XtN-AL-SRT"/>
+                <constraint firstItem="Vfz-Bz-6hH" firstAttribute="width" secondItem="nkI-NY-t1X" secondAttribute="width" multiplier="0.45" id="bl6-un-X8E"/>
+                <constraint firstItem="6Y8-x8-hLa" firstAttribute="top" secondItem="nkI-NY-t1X" secondAttribute="top" constant="99" id="gaZ-XN-CcN"/>
+                <constraint firstItem="Vfz-Bz-6hH" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="ThT-fA-8nO" secondAttribute="bottom" id="hUP-Yr-kjb"/>
+                <constraint firstItem="ThT-fA-8nO" firstAttribute="leading" secondItem="jtU-bK-nsd" secondAttribute="leading" id="icn-n3-7P3"/>
+                <constraint firstItem="YOh-iy-AIN" firstAttribute="centerY" secondItem="nkI-NY-t1X" secondAttribute="centerY" id="pNL-Ml-ery"/>
+                <constraint firstItem="qD6-x4-3Ec" firstAttribute="leading" secondItem="ThT-fA-8nO" secondAttribute="trailing" constant="34" id="pR1-zI-edz"/>
+                <constraint firstItem="jtU-bK-nsd" firstAttribute="leading" secondItem="Vfz-Bz-6hH" secondAttribute="trailing" constant="54" id="s6R-g1-nkB"/>
+                <constraint firstItem="qD6-x4-3Ec" firstAttribute="top" secondItem="ThT-fA-8nO" secondAttribute="top" id="uEZ-Dc-PW8"/>
+                <constraint firstItem="qD6-x4-3Ec" firstAttribute="trailing" secondItem="nkI-NY-t1X" secondAttribute="trailing" id="vku-EP-Dqb"/>
+                <constraint firstItem="abc-v9-JiX" firstAttribute="leading" secondItem="6Y8-x8-hLa" secondAttribute="leading" id="wAl-j0-vL0"/>
+            </constraints>
+            <point key="canvasLocation" x="-32" y="-35"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play.fill" catalog="system" width="120" height="128"/>
+    </resources>
+</document>
