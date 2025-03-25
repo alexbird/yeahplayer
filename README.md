@@ -3,8 +3,8 @@ A proof of concept Apple TV® app showing BBC iPlayer® subtitles
 
 ## The issue
 
-- The BBC’s iPlayer streaming service provides subtitles on every platform *except* Apple TV
-- On Apple TV every streaming service provides subtitles *except* BBC iPlayer
+- The BBC’s iPlayer streaming service provides subtitles on every platform *except* the Apple TV
+- On the Apple TV every streaming service provides subtitles *except* BBC iPlayer
 
 ![Apple TV + BBC iPlayer != Subtitles](images/iplayer-equation.png?raw=true)
 
@@ -12,46 +12,13 @@ Wait, what? How did we get here? The BBC imply this is Apple’s limitation whil
 
 Neither the varying responses from the BBC or the total absence of response from Apple bring me joy. I *could* rant about this, but that’s not the purpose of this readme!
 
-This app is a proof of concept, showing that the BBC’s existing subtitle assets can be consumed by an Apple TV app, with no server changes or external helpers, and displayed using the standard renderer on the platform, preserving the user’s customisations and integrating with features like auto mode. 
+This app is a proof of concept, showing that the BBC’s existing subtitle assets can be consumed by an Apple TV app, with no server changes or external helpers, and displayed using the standard renderer on the platform, preserving the user’s customisations and integrating with system-wide automations. 
 
 If this looks a little underwhelming as a screenshot, it's because we take for granted that this feature is present and works dependably.
 
 ![simple](images/simple-side-by-side.png?raw=true)
 
 You may be surprised to hear I'm not a heavy subtitle user. I'm one of those people who find them distracting. But I *love* being able to jump back 10 seconds and have the Apple TV turn them on automatically, because there's usually something annoying you can't make out.
-
----
-
-## Installation
-
-### ⛔️ TV licence
-
-> WARNING: A UK TV licence is required to access BBC iPlayer TV content legally
-
-This warning is included in bold letters next to the play button in this app. I've copied it verbatim from the popular, and tacitly permitted, [get_iplayer](https://github.com/get-iplayer/get_iplayer) tool. You should **not** play BBC content without a TV licence.
-
-### Build
-
-To build the app you'll need:
-* Xcode 16 or later
-* a Mac that can run Xcode 16
-
-### Run on the Simulator 
-
-With just a Mac you can build and run this demo on the Simulator provided with Xcode. 
-
-#### Delightful simulator remote
-
-* it simulates the old, terrible, remote with only a touch surface and no d-pad
-* it does not appear by default, you'll find it in the `Window` menu
-* you need to use option/alt to perform gestures
-* you're better off learning the keyboard shortcuts unless you need touch specifically — and I haven't used any touch gestures in this demo. Cursor keys, return, escape are your friends, and you can just type normally in the search box.
-
-### Run on Apple TV hardware
-
-To run the demo on your real Apple TV, you will need an Apple Developer account. A free developer account will deploy a version that works for at most a week, a paid account for a lot longer. 
-
-There is a some fiddling to do here in the `Signing and Capabilities` settings for the project. Most people will just need to select their `Team`. 
 
 ---
 
@@ -212,13 +179,56 @@ sequenceDiagram
 
 The subtitle segments when streaming live TV are embedded in `.m4s` files, which are MP4 binary containers specific to subtitles. I am unclear on what header information is added by this container, and I didn't find any useful information about them, but it's easy to find the subtitle content and strip the header off, so we have valid XML to convert.
 
+##### Web server
+
+I've used [GCDWebServer](https://github.com/swisspol/GCDWebServer) because I've found it convenient and reliable before. But it *is* old now, and unmaintained, and kinda responsible for the two warnings when building the app. Any web server running within the app would work.
+
 ## The rest of the app
 
-This is a very simple UIKit-based app. I wanted to avoid architectural yak-shaving in this project. It's unlikely to be the best example of anything. 
+This is a very simple UIKit-based app. I wanted to avoid architectural yak-shaving in this project. It's unlikely to be the best example of anything.
 
-#### Where are the tests?
+It has a `Search` tab and a `Live` tab. The search results are simple, and yet it's still easier to find some things than in the actual iPlayer app. Form getting in the way of function. Live simply shows a list of channels. It does not remember what you have watched or connect to your account.
+
+It is definitely written in Swift, whatever GitHub says. The confusion is because I dropped the old Objective-C web server library directly into the project. 
+
+#### Where are the rest of the tests?
 
 Most of my tests used real data, and there is copyright in subtitles, so they didn't make it into this sample code.
+
+---
+
+## Installation
+
+### ⛔️ TV licence
+
+> WARNING: A UK TV licence is required to access BBC iPlayer TV content legally
+
+This warning is included in bold letters next to the play button in this app. I've copied it verbatim from the popular, and tacitly permitted, [get_iplayer](https://github.com/get-iplayer/get_iplayer) tool. You should **not** play BBC content without a TV licence.
+
+### Build
+
+To build the app you'll need:
+* Xcode 16 or later
+* a Mac that can run Xcode 16
+
+### Run on the Simulator 
+
+With just a Mac you can build and run this demo on the Simulator provided with Xcode. 
+
+#### Delightful simulator remote
+
+* it simulates the old, terrible, remote with only a touch surface and no d-pad
+* it does not appear by default, you'll find it in the `Window` menu
+* you need to use option/alt to perform gestures
+* you're better off learning the keyboard shortcuts unless you need touch specifically — and I haven't used any touch gestures in this demo. Cursor keys, return, escape are your friends, and you can just type normally in the search box.
+
+### Run on Apple TV hardware
+
+To run the demo on your real Apple TV, you will need an Apple Developer account. A free developer account will deploy a version that works for at most a week, a paid account for a lot longer. 
+
+There is a some fiddling to do here in the `Signing and Capabilities` settings for the project. Most people will just need to select their `Team`. 
+
+---
 
 # Acknowledgements
 
