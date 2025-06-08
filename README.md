@@ -21,7 +21,7 @@ If this looks a little underwhelming as a screenshot, it's because we take for g
 You may be surprised to hear I'm not a heavy subtitle user. I'm one of those people who find them distracting. But I *love* being able to jump back 10 seconds and have the Apple TV turn them on automatically, because there's usually something annoying you can't make out.
 
 
-[How it works](#how-it-works) | [How practical is this really?](#how-practical-is-this-really)
+[How it works](#how-it-works) | [How practical is this really?](#how-practical-is-this-really) |
 [Installation](#installation) | [Acknowledgements](#acknowledgements) | [Disclaimers](#disclaimers)
 
 ---
