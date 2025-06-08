@@ -196,6 +196,29 @@ It is definitely written in Swift, whatever GitHub says. The confusion is becaus
 Most of my tests used real data, and there is copyright in subtitles, so they didn't make it into this sample code.
 
 ---
+## How practical is this really?
+
+There is a gulf between making a proof-of-concept and deploying a production app. And the app does do some slightly convoluted things, though in the context of a video playback app they're certainly not unknown. 
+
+However the app could be simplified with minimal amounts of support on the server side:
+
+### Live programming
+
+iPlayer live feeds, including the DASH subtitles, appear to come from Amazon's [AWS Elemental](https://aws.amazon.com/media-services/elemental/). Elemental already supports HLS subtitles, so adding support should be a small config change.
+
+So all of the specific tweaks for Live could be removed.
+
+### Converting and serving the subtitles
+
+Tooling already exists to convert these subtitles to WebVTT on the server, for example [ttconv](https://github.com/sandflow/ttconv). The computation/storage/bandwidth required is tiny. It looks like the BBC already converts subtitles to WebVTT for platforms such as YouTube anyway. The app could get the on-demand subtitles in the right format directly from the server.
+
+So all of the conversion logic and the internal web server could be removed.
+
+### What's left?
+
+If these minor accomodations were made, the custom elements of the app would be reduced to a simple `AVAssetResourceLoaderDelegate` handler to add the subtitles to the master playlist. That's it. 
+
+---
 
 ## Installation
 
