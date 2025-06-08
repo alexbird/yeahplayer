@@ -20,6 +20,10 @@ If this looks a little underwhelming as a screenshot, it's because we take for g
 
 You may be surprised to hear I'm not a heavy subtitle user. I'm one of those people who find them distracting. But I *love* being able to jump back 10 seconds and have the Apple TV turn them on automatically, because there's usually something annoying you can't make out.
 
+
+[How it works](#how-it-works) | [How practical is this really?](#how-practical-is-this-really)
+[Installation](#installation) | [Acknowledgements](#acknowledgements) | [Disclaimers](#disclaimers)
+
 ---
 
 ## How it works
@@ -66,7 +70,7 @@ But the HLS playlists provided by iPlayer **do not** include captions! Essential
 
 <!-- ![sequence diagram](images/full-sequence.png?raw=true) -->
 
-It turns out that Apple have provided an API for this. Sorta. We can provide a delegate which will take care of the actual loading of playlists, as long as we jump through hoops like using a custom URL scheme to force the player to ask for our help.
+It turns out that Apple have provided an API for this. Sorta. We can provide a [delegate](https://developer.apple.com/documentation/avfoundation/avassetresourceloaderdelegate) which will take care of the actual loading of playlists, as long as we jump through hoops like using a custom URL scheme to force the player to ask for our help.
 
 For clarity I have left out details of adding and removing our custom URL scheme — `yeahhttps`
 
@@ -196,6 +200,7 @@ It is definitely written in Swift, whatever GitHub says. The confusion is becaus
 Most of my tests used real data, and there is copyright in subtitles, so they didn't make it into this sample code.
 
 ---
+
 ## How practical is this really?
 
 There is a gulf between making a proof-of-concept and deploying a production app. And the app does do some slightly convoluted things, though in the context of a video playback app they're certainly not unknown. 
@@ -214,9 +219,15 @@ Tooling already exists to convert these subtitles to WebVTT on the server, for e
 
 So all of the conversion logic and the internal web server could be removed.
 
+### Generating the subtitles playlist
+
+The subtitles playlist pointing to the plain subtitles file is very simple and about 200 bytes in size. This could also be trivially served by the BBC.
+
 ### What's left?
 
-If these minor accomodations were made, the custom elements of the app would be reduced to a simple `AVAssetResourceLoaderDelegate` handler to add the subtitles to the master playlist. That's it. 
+If these minor accomodations were made, the custom elements of the app would be reduced to a simple `AVAssetResourceLoaderDelegate` handler to add the subtitles playlist to the master playlist. That's it. 
+
+This approach avoids any impact on other platforms.
 
 ---
 
@@ -231,19 +242,19 @@ This warning is included in bold letters next to the play button in this app. I'
 ### Build
 
 To build the app you'll need:
-* Xcode 16 or later
+* [Xcode](https://developer.apple.com/xcode/) 16 or later
 * a Mac that can run Xcode 16
 
 ### Run on the Simulator 
 
 With just a Mac you can build and run this demo on the Simulator provided with Xcode. 
 
-#### Delightful simulator remote
+#### Notes on the delightful simulator remote
 
 * it simulates the old, terrible, remote with only a touch surface and no d-pad
 * it does not appear by default, you'll find it in the `Window` menu
 * you need to use option/alt to perform gestures
-* you're better off learning the keyboard shortcuts unless you need touch specifically — and I haven't used any touch gestures in this demo. Cursor keys, return, escape are your friends, and you can just type normally in the search box.
+* you're better off learning the keyboard shortcuts unless you need touch specifically — and I haven't used any touch gestures in this demo. **Cursor keys, return, escape** are your friends, and you can just type normally in the search box.
 
 ### Run on Apple TV hardware
 
